@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<div
+  className="flex justify-center flex-col items-center h-screen"
+>
+  <header
+    className="mb-10 text-center"
+  >
+    <h1
+      className="text-3xl font-bold"
+    >
+      Barcode Generator
+    </h1>
+    <a
+      href="https://github.com/mrsanchez02/barcode-generator-app"
+      rel="noreferrer"
+      target="_blank"
+    >
+      Github code
+    </a>
+  </header>
+  <form
+    className="flex w-auto mb-4 flex-col justify-center"
+  >
+    <label
+      className="text-center"
+      htmlFor="text2transform"
+    >
+      Type here:
+    </label>
+    <input
+      className="text-center text-lg border-2 mx-2 rounded-md border-cyan-700"
+      id="text2transform"
+      onChange={[Function]}
+      type="text"
+      value="https://github.com/mrsanchez02"
+    />
+  </form>
+  <img />
+</div>
+`;

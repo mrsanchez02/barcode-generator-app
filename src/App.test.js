@@ -1,8 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import renderer from 'react-test-renderer'
 import App from './App';
 
-test('renders github link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/github/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('App renders correctly', () => {
+  const component = renderer.create(
+    <App />
+  )
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot();
+})
