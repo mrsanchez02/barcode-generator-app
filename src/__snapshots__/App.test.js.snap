@@ -2,7 +2,7 @@
 
 exports[`App renders correctly 1`] = `
 <div
-  className="flex justify-center flex-col items-center h-screen"
+  className="flex justify-center flex-col items-center h-screen undefined"
 >
   <header
     className="mb-10 text-center"
@@ -30,7 +30,7 @@ exports[`App renders correctly 1`] = `
       Type here:
     </label>
     <input
-      className="text-center text-lg border-2 mx-2 rounded-md border-cyan-700"
+      className="text-center text-lg border-2 mx-2 rounded-md border-cyan-700 bg-transparent"
       id="text2transform"
       onChange={[Function]}
       type="text"
@@ -38,5 +38,18 @@ exports[`App renders correctly 1`] = `
     />
   </form>
   <img />
+  <div
+    className="mt-2"
+  >
+    <label
+      htmlFor="darkmode"
+    >
+      Dark mode? 
+    </label>
+    <input
+      id="darkmode"
+      type="checkbox"
+    />
+  </div>
 </div>
 `;
